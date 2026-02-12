@@ -1,0 +1,142 @@
+body {
+  background-color: #f2efea;
+  margin: 0;
+  font-family: 'poppins', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.first-page {
+  display: flex;
+  justify-content: center;
+  /* max-width: 600px; */
+  /* width: 90%; */
+}
+
+.first-page img {
+  display: block;
+  /* text-align: center; */
+  max-width: 40vw;
+  animation: floatLR 4s ease-in-out infinite, glow 2s infinite alternate;
+  margin-top: 30px;
+}
+
+.btn {
+  min-width: 20vw;
+  min-height: 8vh;
+  border-radius: 7px;
+  background-color: #35bd3a;
+  color: white;
+  padding-left: 20px;
+  font-size: 35px;
+  border: 0;
+  outline: 0;
+  margin-inline: auto;
+  box-shadow: 8px 7px 0px 0px #01ab08;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  align-items: center;
+  font-family: "poppins", cursive;
+  animation: floatBtn 4s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 12%;
+
+  text-align: center;
+}
+
+.show-score {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  color: black;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+@keyframes floatLR {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(10px, -5px) rotate(2deg);
+  }
+
+  50% {
+    transform: translate(-10px, 5px) rotate(-2deg);
+  }
+
+  75% {
+    transform: translate(10px, -5px) rotate(2deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 5px rgb(0, 174, 255));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 20px rgba(19, 35, 255, 0.61));
+  }
+}
+
+@keyframes floatBtn {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(3px, -5px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-3px, 5px) rotate(-1deg);
+  }
+
+  75% {
+    transform: translate(3px, -5px) rotate(1deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .first-page img {
+    max-width: 80vw;
+  }
+
+  .btn {
+    margin-top: 110px;
+  }
+
+  p {
+    margin-top: 300px;
+  }
+
+  .show-score {
+    font-size: 20px;
+    margin-top: 40%;
+  }
+}
