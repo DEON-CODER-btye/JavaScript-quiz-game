@@ -42,4 +42,6 @@ This project was created to practice JavaScript concepts such as:
 
 ## Author
 
+Suraj Prasad
+
 Created as a practice project while learning JavaScript.
