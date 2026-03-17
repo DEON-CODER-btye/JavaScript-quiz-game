@@ -3,6 +3,10 @@
 A simple Quiz Game built using HTML, CSS, and JavaScript.  
 The application allows users to answer multiple-choice questions and view their final score at the end.
 
+## Live Demo
+
+🌐 [Play the Game](the-quiz-project.netlify.app)
+
 ## Features
 
 - Multiple choice questions
