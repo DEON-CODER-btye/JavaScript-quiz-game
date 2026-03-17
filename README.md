@@ -5,7 +5,7 @@ The application allows users to answer multiple-choice questions and view their 
 
 ## Live Demo
 
-🌐 [Play the Game](the-quiz-project.netlify.app)
+🌐 [Play the Game](https://the-quiz-project.netlify.app)
 
 ## Features
 
