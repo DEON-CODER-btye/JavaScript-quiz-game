@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('corrects', correctAnswer);
         localStorage.setItem('total', quizData.length);
         setTimeout(() => {
-          window.location.href = 'second.html'
+          window.location.href = 'result.html'
         }, 1000)
       } else {
         loadQuestion(currentIndex);
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
     redRate.textContent = `${redpercent.toFixed(0)}%`;
     if (rtyBtn) {
       rtyBtn.addEventListener('click', () => {
-        window.location.href = 'first.html';
+        window.location.href = 'quiz.html';
 
       });
     }
